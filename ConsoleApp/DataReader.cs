@@ -5,7 +5,6 @@
     using System.Text;
     using System.IO;
     using System.Linq;
-    using System.Threading.Tasks;
 
     public class DataReader
     {
@@ -103,28 +102,44 @@
 
     class ImportedObject : ImportedObjectBaseClass
     {
-        public string Name
-        {
+        public string Name {
             get;
             set;
         }
         public string Schema;
 
         public string ParentName;
-        public string ParentType
-        {
-            get; set;
+        public string ParentType {
+            get; 
+            set;   
+        }
+        // You should stick to one way of writing. For example, the entry as in line 106 to 110.
+
+        public string DataType { 
+            get; 
+            set; 
+        }
+        public string IsNullable { 
+            get; 
+            set; 
         }
 
-        public string DataType { get; set; }
-        public string IsNullable { get; set; }
+        // You should stick to one way of writing. For example, the entry as in line 106 to 110.
 
-        public double NumberOfChildren;
+        public double NumberOfChildren; // The buckle was missing.
     }
 
     class ImportedObjectBaseClass
     {
-        public string Name { get; set; }
-        public string Type { get; set; }
+        public string Name { 
+            get; 
+            set; 
+        }
+        public string Type { 
+            get; 
+            set; 
+        }
+
+        // You should stick to one way of writing. For example, the entry as in line 106 to 110.
     }
 }

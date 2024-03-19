@@ -5,14 +5,13 @@
     using System.IO;
     using System.Linq;
     using System.Text;
-    using System.Threading.Tasks;
 
     internal class Program
     {
         static void Main(string[] args)
         {
             var reader = new DataReader();
-            reader.ImportAndPrintData("dataa.csv");
+            reader.ImportAndPrintData("data.csv"); //Mistake in name of CSV file "dataa.csv" -> "data.csv".
         }
     }
 }
